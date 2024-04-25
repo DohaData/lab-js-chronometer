@@ -43,11 +43,3 @@ class Chronometer {
     return `${minutes}:${seconds}`;
   }
 }
-
-let chronometer = new Chronometer();
-
-chronometer.start();
-
-chronometer.stop();
-
-console.log(chronometer.split());
