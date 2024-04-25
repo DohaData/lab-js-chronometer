@@ -27,10 +27,7 @@ class Chronometer {
 
   computeTwoDigitNumber(value) {
     let stringValue = value.toString();
-    if (stringValue.length == 1) {
-      return `0${stringValue}`;
-    }
-    return `${stringValue}`;
+    return stringValue.padStart(2, "0");
   }
 
   stop() {
